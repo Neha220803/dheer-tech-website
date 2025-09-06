@@ -44,7 +44,7 @@ export const OurProjectsComp = () => {
   }, []);
 
   return (
-    <div className="bg-neutral-700 text-white">
+    <div className="bg-neutral-700 text-white" id="projects">
       <div className="projects-header">
         <h1 className="projects-title">PROJECTS</h1>
 

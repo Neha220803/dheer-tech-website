@@ -61,7 +61,7 @@ const HomeAboutUsComp = () => {
   ];
 
   return (
-    <div className="overflow-hidden bg-primary">
+    <div className="overflow-hidden bg-neutral-700" id="about">
       {/* Hero Section */}
       <div className="text-center pt-18 pb-4 px-6">
         <motion.h1

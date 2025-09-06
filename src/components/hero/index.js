@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 const vieLeft = "/assets/videos/video-bg.mp4";
 
@@ -7,7 +8,7 @@ const earthImg = "/assets/images/home.svg";
 
 export const HomeHeroComp = () => {
   return (
-    <div className="h-screen  px-30">
+    <div className="h-screen" id="home">
       <div className="grid md:grid-cols-2 grid-cols-1 h-screen ">
         <div className="flex justify-center items-center">
           <img
@@ -23,6 +24,11 @@ export const HomeHeroComp = () => {
               We design and develop web-based solutions that empower businesses
               to grow with security and confidence.
             </p>
+            <div>
+              <Button size="lg" className="rounded-2xl p-6">
+                Contact Us
+              </Button>
+            </div>
           </div>
         </div>
       </div>

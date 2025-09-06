@@ -17,7 +17,7 @@ const custWebApp = "/assets/images/services/cust-web-dev.svg";
 
 export const OurServiceComp = () => {
   return (
-    <section className="flex flex-col space-y-10">
+    <section className="flex flex-col space-y-10" id="services">
       {/* Animated Title */}
       <motion.div
         variants={titleVariants}

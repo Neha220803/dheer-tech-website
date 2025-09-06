@@ -71,7 +71,7 @@ export const HomeNavComp = () => {
               <NavigationMenuList className="space-x-1">
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                     onClick={() => handleNavClick("#home")}
                   >
                     Home
@@ -80,7 +80,7 @@ export const HomeNavComp = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                     onClick={() => handleNavClick("#about")}
                   >
                     About
@@ -89,7 +89,7 @@ export const HomeNavComp = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                     onClick={() => handleNavClick("#services")}
                   >
                     Services
@@ -98,7 +98,7 @@ export const HomeNavComp = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                     onClick={() => handleNavClick("#projects")}
                   >
                     Projects
@@ -107,7 +107,7 @@ export const HomeNavComp = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                     onClick={() => handleNavClick("#testimonial")}
                   >
                     Testimonial
@@ -158,7 +158,7 @@ export const HomeNavComp = () => {
               <div className="space-y-2">
                 <Button
                   variant="ghost"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                   onClick={() => handleNavClick("#home")}
                 >
                   Home
@@ -166,7 +166,7 @@ export const HomeNavComp = () => {
 
                 <Button
                   variant="ghost"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                   onClick={() => handleNavClick("#services")}
                 >
                   Services
@@ -174,7 +174,7 @@ export const HomeNavComp = () => {
 
                 <Button
                   variant="ghost"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                   onClick={() => handleNavClick("#projects")}
                 >
                   Projects
@@ -182,7 +182,7 @@ export const HomeNavComp = () => {
 
                 <Button
                   variant="ghost"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                   onClick={() => handleNavClick("#resources")}
                 >
                   Resources
@@ -190,7 +190,7 @@ export const HomeNavComp = () => {
 
                 <Button
                   variant="ghost"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors cursor-pointer text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors text-gray-900 hover:bg-gray-100 hover:text-gray-900"
                   onClick={() => handleNavClick("#about")}
                 >
                   About
@@ -209,9 +209,6 @@ export const HomeNavComp = () => {
           </div>
         </div>
       </nav>
-
-      {/* Spacer to prevent content from hiding behind fixed navbar */}
-      <div className="h-20"></div>
     </>
   );
 };
