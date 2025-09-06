@@ -133,6 +133,10 @@ section {
 }
 
 body {
-  /* margin: 0 6rem; */
+
   overflow-x: hidden;
+}
+
+section {
+  margin: 0 6rem;
 }
