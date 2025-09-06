@@ -1,18 +1,18 @@
 import React from "react";
 
-const headerVid = "/assets/videos/earth-hero-vid.mp4";
+const vieLeft = "/assets/videos/video-bg.mp4";
 
 export const HomeHeroComp = () => {
   return (
-    <div className="bg-black text-white h-screen container mx-auto">
+    <div className="bg-black text-white h-screen px-30">
       <div className="grid md:grid-cols-2 grid-cols-1 h-screen ">
-        <div className="flex justify-center items-center p-4">
+        <div className="flex justify-center items-center">
           <video
-            src={headerVid}
+            src={vieLeft}
             autoPlay
             loop
-            // muted
-            className="w-full h-full object-cover"
+            muted
+            className="w-full h-full object-contain rounded-lg"
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-4 ">
