@@ -1,0 +1,7 @@
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90px;
+}
