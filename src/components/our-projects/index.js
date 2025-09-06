@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
+import "./styles.css";
 
 const images = [
   "crown-3.png",
@@ -44,9 +45,20 @@ export const OurProjectsComp = () => {
 
   return (
     <div className="bg-neutral-700 text-white">
-      <div className="flex items-center justify-center py-6">
-        <div className="text-5xl">Our Projects</div>
-      </div>
+      <div className="projects-header">
+        <h1 className="projects-title">PROJECTS</h1>
+
+        <p className="projects-description">
+          We don't just build websites, we craft digital experiences. Every
+          pixel tells a story, every interaction sparks joy. Our team blends
+          cutting-edge technology with human-centered design to create solutions
+          that don't just work—they inspire.
+          <span className="arrow-line"></span>
+          <span className="projects-description-highlight">
+            Plus, we're pretty fun to work with.
+          </span>
+        </p>
+      </div>{" "}
       <div
         ref={gallery}
         className="h-[175vh] bg-neutral-700 relative flex gap-[2vw] p-[2vw] box-border overflow-hidden"

@@ -1,5 +1,6 @@
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
+import { HomeNavComp } from "@/components/nav";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -20,7 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} antialiased`}>{children}</body>
+      <body className={`${interTight.variable} antialiased`}>
+        <HomeNavComp />
+        {children}
+      </body>
     </html>
   );
 }
