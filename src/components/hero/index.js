@@ -4,13 +4,13 @@ const headerVid = "/assets/videos/earth-hero-vid.mp4";
 
 export const HomeHeroComp = () => {
   return (
-    <div className="bg-black text-white h-screen">
-      <div className="grid md:grid-cols-2 grid-cols-1 h-screen mx-30">
+    <div className="bg-black text-white h-screen container mx-auto">
+      <div className="grid md:grid-cols-2 grid-cols-1 h-screen ">
         <div className="flex justify-center items-center p-4">
           <video
             src={headerVid}
             autoPlay
-            // loop
+            loop
             // muted
             className="w-full h-full object-cover"
           />
