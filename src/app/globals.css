@@ -128,3 +128,8 @@ section {
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  /* margin: 0 6rem; */
+  overflow-x: hidden;
+}
