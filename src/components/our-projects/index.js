@@ -47,7 +47,6 @@ export const OurProjectsComp = () => {
     <div className="bg-neutral-700 text-white" id="projects">
       <div className="projects-header">
         <h1 className="projects-title">PROJECTS</h1>
-
         <p className="projects-description">
           We don't just build websites, we craft digital experiences. Every
           pixel tells a story, every interaction sparks joy. Our team blends
@@ -58,7 +57,7 @@ export const OurProjectsComp = () => {
             Plus, we're pretty fun to work with.
           </span>
         </p>
-      </div>{" "}
+      </div>
       <div
         ref={gallery}
         className="h-[175vh] bg-neutral-700 relative flex gap-[2vw] p-[2vw] box-border overflow-hidden"
@@ -86,7 +85,7 @@ export const OurProjectsComp = () => {
 const Column = ({ images, y, topOffset }) => {
   return (
     <motion.div
-      className={`relative h-full w-1/3 min-w-[250px] flex flex-col gap-[2vw] ${topOffset}`}
+      className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${topOffset}`}
       style={{ y }}
     >
       {images.map((src, index) => {

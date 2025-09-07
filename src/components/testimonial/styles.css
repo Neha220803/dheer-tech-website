@@ -1,7 +1,6 @@
 /* Testimonial Section */
 .testimonial-section {
     padding: 4rem 0;
-    position: relative;
 }
 
 .testimonial-header {
@@ -33,7 +32,7 @@
 }
 
 .scrollable-container::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
 .testimonial-card-container {
@@ -130,33 +129,4 @@
 .testimonial-custom-card {
     position: relative;
     /* Make sure card has relative positioning */
-}
-
-.arrow-button-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    z-index: 1000;
-}
-
-.arrow-button-card:hover {
-    background-color: white;
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.arrow-button-card svg {
-    width: 1rem;
-    height: 1rem;
-    color: #374151;
 }

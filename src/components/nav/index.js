@@ -61,7 +61,7 @@ export const HomeNavComp = () => {
                   className="rounded-full"
                 />
               </div>
-              <span className="font-bold text-lg hidden sm:block transition-color text-gray-900">
+              <span className="font-bold text-lg transition-color text-gray-900">
                 Dheer Tech
               </span>
             </div>

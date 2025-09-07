@@ -5,3 +5,11 @@
     width: auto;
     height: 90px;
 }
+
+@media (max-width: 456px) {
+    .service-icons {
+        width: auto;
+        height: 65px;
+    }
+
+}

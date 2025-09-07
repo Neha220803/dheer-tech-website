@@ -61,14 +61,14 @@ const HomeAboutUsComp = () => {
   ];
 
   return (
-    <div className="overflow-hidden bg-neutral-700" id="about">
+    <div className="overflow-hidden bg-neutral-700 md:py-10 py-6" id="about">
       {/* Hero Section */}
-      <div className="text-center pt-18 pb-4 px-6">
+      <div className="text-start md:text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-7xl font-bold mb-8 text-primary-foreground"
+          className="md:text-7xl text-5xl font-bold mb-8 text-primary-foreground"
         >
           We Promote Innovation
         </motion.h1>
@@ -107,7 +107,7 @@ const HomeAboutUsComp = () => {
       </div>
 
       {/* Closing Section */}
-      <div className="text-center py-8 px-6">
+      {/* <div className="text-center py-8 px-6">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -124,7 +124,7 @@ const HomeAboutUsComp = () => {
         >
           Let's turn your vision into reality with our expertise and innovation.
         </motion.p>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -140,7 +140,7 @@ const Slide = ({ contentSet, direction, left, progress, speed = 1 }) => {
   return (
     <motion.div
       style={{ x: translateX, left: left }}
-      className="relative flex whitespace-nowrap my-8"
+      className="relative flex whitespace-nowrap my-4 md:my-8"
     >
       <ContentRow contentSet={contentSet} />
       <ContentRow contentSet={contentSet} />
@@ -158,10 +158,10 @@ const ContentRow = ({ contentSet }) => (
 );
 
 const ContentCard = ({ item }) => (
-  <Card className="rounded-full h-full flex items-center justify-center">
+  <Card className="rounded-full h-full flex items-center justify-center md:py-6 py-3">
     <CardContent className="">
       {item.content && !item.icon && (
-        <p className="text-2xl font-semibold text-card-foreground text-center">
+        <p className="md:text-2xl text-lg font-semibold text-card-foreground text-center">
           {item.content}
         </p>
       )}
@@ -187,7 +187,7 @@ const ContentCard = ({ item }) => (
               className="object-contain"
             />
           </div>
-          <p className="text-xl font-semibold text-card-foreground">
+          <p className="md:text-xl text-lg font-semibold  text-card-foreground">
             {item.content}
           </p>
         </div>
