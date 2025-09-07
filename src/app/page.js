@@ -4,7 +4,7 @@ import HomeAboutUsComp from "@/components/about";
 import { HomeHeroComp } from "@/components/hero";
 import { OurProjectsComp } from "@/components/our-projects";
 import { OurServiceComp } from "@/components/our-services";
-import HomeTestimonialComp from "@/components/testimonial";
+import { HomeTestimonialComp } from "@/components/testimonial";
 import HomeTimelineComp from "@/components/timeline";
 import Lenis from "lenis";
 import { useEffect } from "react";
