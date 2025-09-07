@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "Dheer Tech Inc is a leading web development company specializing in creating secure, scalable, and smart web-based solutions for businesses of all sizes.",
   icons: {
-    icon: "/assets/images/logo.jpeg",
+    icon: "/assets/images/logo/logo-circle.png",
   },
 };
 
