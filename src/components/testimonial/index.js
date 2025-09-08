@@ -1,9 +1,4 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { Card, CardContent } from "../ui/card";
-import "./styles.css";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import HomeCTAComp from "../cta";
+import React from "react";
 
 const testimonialData = [
   {
@@ -68,81 +63,6 @@ const testimonialData = [
   },
 ];
 
-const TestimonialCard = ({ testimonial }) => {
-  return (
-    <Card className="testimonial-card">
-      <CardContent className="flex flex-col h-full p-6">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex-1">
-            <div className="font-bold text-lg text-gray-900">
-              {testimonial.name}
-            </div>
-            <div className="text-sm text-gray-600">
-              {testimonial.institution}
-            </div>
-            <div className="flex items-center mt-1">
-              <div className="text-yellow-500 mr-2">
-                {"⭐".repeat(testimonial.rating)}
-              </div>
-              <div className="text-xs text-gray-500">{testimonial.date}</div>
-            </div>
-          </div>
-          <Avatar className="testimonial-avatar-container">
-            {testimonial.image ? (
-              <AvatarImage
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="testimonial-avatar"
-              />
-            ) : (
-              <AvatarFallback className="testimonial-avatar bg-primary text-white">
-                {testimonial.name.charAt(0).toUpperCase()}
-              </AvatarFallback>
-            )}
-          </Avatar>
-        </div>
-        <p className="text-gray-700 text-sm leading-relaxed flex-1 overflow-y-auto">
-          {testimonial.description}
-        </p>
-      </CardContent>
-    </Card>
-  );
-};
-
-const HorizontalScrollTestimonials = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  // Calculate the transform based on the number of test
-  // imonials
-  // Adjust the end value based on your needs
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-85%"]);
-
-  return (
-    <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="w-full">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-gray-900 mb-4">
-              Hear what our Customers Say
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Real feedback from our valued clients
-            </p>
-          </div>
-          <motion.div style={{ x }} className="flex gap-8 px-8">
-            {testimonialData.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 export const HomeTestimonialComp = () => {
-  return <HorizontalScrollTestimonials />;
+  return <section>Testimonial Comp</section>;
 };
