@@ -115,9 +115,9 @@ export const HomeHeroComp = () => {
           <div className="left-grid-big-right-card h-full">
             <div className="z-1000">
               <div className="text-2xl font-medium">
-                Innovation Meets Security
+                Build Once, Scale Forever
               </div>
-              <p>We Create Smart Web Solutions That Scale with Your Business</p>
+              <p>Future-proof solutions that grow with your ambitions</p>
             </div>
             <div className="red-overlay"></div>
           </div>
